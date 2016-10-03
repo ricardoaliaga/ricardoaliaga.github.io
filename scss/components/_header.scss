@@ -1,0 +1,22 @@
+.c-header {
+  &__name {
+    color: $colorLightTxt;
+  }
+  &__title {
+    margin-top: 16px;
+    font-weight: $fontLight;
+    color: $colorAccent;
+  }
+  &__descrip {
+    margin-top: 32px;
+    @include break($break3) {
+      margin-top: 48px;
+    }
+    &__link-group {
+      margin-top: 16px;
+    }
+    &__link {
+      @extend %link-style;
+    }
+  }
+}

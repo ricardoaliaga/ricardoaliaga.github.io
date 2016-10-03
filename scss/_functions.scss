@@ -1,0 +1,3 @@
+@function calcPercent($unit, $context) {
+    @return ($unit / $context) * 100%;
+}

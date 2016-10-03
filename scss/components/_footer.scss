@@ -1,0 +1,18 @@
+.c-footer {
+  text-align: center;
+  &__links {
+    &__link {
+      color: #fff;
+      border-bottom: 2px solid rgba(#fff, .2);
+      transition: border-color .3s ease-in-out;
+      text-decoration: none;
+      &:hover {
+        border-bottom-color: #fff;
+      }
+    }
+  }
+  &__credit {
+    margin-top: 32px;
+    color: $colorLightTxt;
+  }
+}

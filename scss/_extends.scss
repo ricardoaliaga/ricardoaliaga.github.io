@@ -1,0 +1,14 @@
+%link-style {
+  color: $colorAccent;
+  border-bottom: 2px solid rgba($colorAccent, .2);
+  transition: border-color .3s ease-in-out;
+  text-decoration: none;
+  &:hover {
+    border-bottom-color: $colorAccent;
+  }
+}
+%border-box {
+  border-width: 1px;
+  border-style: solid;
+  border-color: $colorBorderLight $colorBorderLight $colorBorderDark;
+}

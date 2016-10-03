@@ -1,0 +1,67 @@
+.o-region {
+  padding-left: 18px;
+  padding-right: 18px;
+  @include break {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  @include break($break2) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  &--light-bg {
+    background-color: $colorLightBg;
+  }
+  &--dark-bg {
+    background-color: $colorDarkBg;
+  }
+}
+.o-wrapper {
+  max-width: $maxWidth1;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 48px;
+  padding-bottom: 64px;
+  @include break($break3) {
+    padding-top: 64px;
+    padding-bottom: 88px;
+  }
+  @include break($break4) {
+    max-width: $maxWidth2;
+  }
+}
+.o-title,
+.o-subtitle {
+  font-weight: $fontRegular;
+}
+.o-title {
+  font-size: 64px;
+  line-height: 1.125;
+  letter-spacing: -.025em;
+  @include break($break3) {
+    font-size: 72px;
+    line-height: 80px;
+  }
+}
+.o-subtitle {
+  font-size: 25px;
+  line-height: 1.28;
+  @include break($break3) {
+    font-size: 32px;
+    line-height: 1.25;
+  }
+}
+.o-parag {
+  font-size: 16px;
+  line-height: 1.75;
+  @include break($break3) {
+    font-size: 20px;
+    line-height: 1.8;
+  }
+}
+.o-inlineb-link {
+  display: inline-block;
+  & + & {
+    margin-left: 24px;
+  }
+}

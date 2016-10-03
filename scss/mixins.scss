@@ -1,0 +1,75 @@
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+}
+@mixin calc($prop, $secondValue, $firstValue: 100%) {
+  #{$prop}: -webkit-calc(#{$firstValue} - #{$secondValue});
+  #{$prop}: calc(#{$firstValue} - #{$secondValue});
+}
+@mixin break($breakPoint: $break) {
+  @media (min-width:$breakPoint) {
+    @content;
+  }
+}
+@mixin position($position: absolute, $top:0, $left:0, $bottom:0, $right:0) {
+  position:$position;
+  top: $top;
+  left: $left;
+  bottom: $bottom;
+  right: $right;
+}
+@mixin bg-image($url, $color: null, $repeat: no-repeat, $align: center) {
+  background: $color url('../images/#{$url}') $repeat $align;
+}
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+}
+@mixin overflow-auto() {
+  overflow:auto;
+  -webkit-overflow-scrolling: touch;
+}
+@mixin fill-width() {
+  text-align:justify;
+  text-justify: distribute-all-lines;
+  font-size:0;
+  &:after {
+    display: inline-block;
+    width:100%;
+    content:'';
+  }
+}
+@mixin grid-gap {
+  &.gap {
+    &::before {
+      content: none;
+    }
+  }
+}
+@mixin placeholder($color: inherit) {
+  ::-webkit-input-placeholder {
+     color: $color;
+  }
+
+  :-moz-placeholder { /* Firefox 18- */
+     color: $color;
+  }
+
+  ::-moz-placeholder {  /* Firefox 19+ */
+     color: $color;
+  }
+
+  :-ms-input-placeholder {
+     color: $color;
+  }
+}
