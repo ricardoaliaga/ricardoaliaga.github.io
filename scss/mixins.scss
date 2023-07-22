@@ -2,7 +2,7 @@
   #{$prop}: -webkit-calc(#{$firstValue} - #{$secondValue});
   #{$prop}: calc(#{$firstValue} - #{$secondValue});
 }
-@mixin break($breakPoint: $break) {
+@mixin break($breakPoint: $break2) {
   @media (min-width:$breakPoint) {
     @content;
   }

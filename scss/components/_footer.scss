@@ -3,7 +3,7 @@
   &__links {
     &__link {
       color: #fff;
-      border-bottom: 2px solid rgba(#fff, .2);
+      border-bottom: $borderWidth2 solid rgba(#fff, .2);
       transition: border-color .3s ease-in-out;
       text-decoration: none;
       &:hover {
@@ -12,7 +12,7 @@
     }
   }
   &__credit {
-    margin-top: 32px;
-    color: $colorLightTxt;
+    margin-top: $spacing32;
+    color: $colorNegativeTxt;
   }
 }

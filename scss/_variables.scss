@@ -1,21 +1,44 @@
 // FONTS
-$fontTitle: 'Roboto', sans-serif;
-$fontLight: 300;
-$fontRegular: 400;
+$fontTitle: 'Satoshi', sans-serif;
+$fontMedium: 500;
 $fontBold: 700;
 // COLORS
-$colorBorderLight: #e9e8e8;
-$colorBorderDark: #d2d2d2;
-$colorLightBg: #f4f4f4;
-$colorDarkBg: #242529;
-$colorLightTxt: #b8b8b8;
-$colorDarkTxt: #666;
-$colorAccent: #448aff;
+$colorBorder: #D5D5DD;
+$colorLightBg: #F4F4F6;
+$colorDarkBg: #22232A;
+$colorLightTxt: #73748C;
+$colorDarkTxt: #22232A;
+$colorNegativeTxt: #ABACBA;
+$colorAccent: #434CE6;
 // BREAKPOINTS
-$break: 375px;
 $break2: 460px;
 $break3: 768px;
 $break4: 828px;
 // OTHERS
 $maxWidth1: 640px;
 $maxWidth2: 700px;
+// FONT SIZES
+$text12: .75rem;
+$text14: .875rem;
+$text16: 1rem;
+$text20: 1.25rem;
+$text24: 1.5rem;
+$text32: 2rem;
+$text64: 4rem;
+$text72: 4.5rem;
+// SPACING
+$spacing4: .25rem;
+$spacing8: .5rem;
+$spacing12: .75rem;
+$spacing16: 1rem;
+$spacing24: 1.5rem;
+$spacing32: 2rem;
+$spacing48: 3rem;
+$spacing64: 4rem;
+$spacing96: 6rem;
+// BORDER RADIUS
+$borderRadius2: .125rem;
+$borderRadius4: .25rem;
+// BORDER WIDTH
+$borderWidth1: 1px;
+$borderWidth2: 2px;

@@ -1,13 +1,9 @@
 .o-region {
-  padding-left: 18px;
-  padding-right: 18px;
-  @include break {
-    padding-left: 24px;
-    padding-right: 24px;
-  }
+  padding-left: $spacing24;
+  padding-right: $spacing24;
   @include break($break2) {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: $spacing32;
+    padding-right: $spacing32;
   }
   &--light-bg {
     background-color: $colorLightBg;
@@ -20,11 +16,11 @@
   max-width: $maxWidth1;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 48px;
-  padding-bottom: 64px;
+  padding-top: $spacing64;
+  padding-bottom: $spacing64;
   @include break($break3) {
-    padding-top: 64px;
-    padding-bottom: 88px;
+    padding-top: $spacing96;
+    padding-bottom: $spacing96;
   }
   @include break($break4) {
     max-width: $maxWidth2;
@@ -32,36 +28,39 @@
 }
 .o-title,
 .o-subtitle {
-  font-weight: $fontRegular;
+  font-weight: $fontMedium;
 }
 .o-title {
-  font-size: 64px;
+  font-size: $text64;
   line-height: 1.125;
   letter-spacing: -.025em;
   @include break($break3) {
-    font-size: 72px;
-    line-height: 80px;
+    font-size: $text72;
   }
 }
 .o-subtitle {
-  font-size: 25px;
-  line-height: 1.28;
+  font-size: $text24;
+  line-height: 1.25;
   @include break($break3) {
-    font-size: 32px;
-    line-height: 1.25;
+    font-size: $text32;
   }
 }
 .o-parag {
-  font-size: 16px;
-  line-height: 1.75;
+  font-size: $text16;
+  line-height: 1.8;
   @include break($break3) {
-    font-size: 20px;
-    line-height: 1.8;
+    font-size: $text20;
+  }
+  & + & {
+    margin-top: $spacing12;
+    @include break($break3) {
+      margin-top: $spacing16;
+    }
   }
 }
 .o-inlineb-link {
   display: inline-block;
   & + & {
-    margin-left: 24px;
+    margin-left: $spacing24;
   }
 }

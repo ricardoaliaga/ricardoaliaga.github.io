@@ -1,60 +1,49 @@
 .c-block {
   &__tag {
-    font-size: 13px;
-    line-height: 16px;
+    font-size: $text14;
+    line-height: 1.5;
     font-weight: $fontBold;
     text-transform: uppercase;
     letter-spacing: .2em;
     color: $colorLightTxt;
     @include break($break3) {
-      font-size: 16px;
+      font-size: $text16;
     }
   }
   &__tag + &__unit {
-    margin-top: 32px;
+    margin-top: $spacing32;
     @include break($break3) {
-      margin-top: 48px;
+      margin-top: $spacing48;
     }
   }
   &__unit {
     & + & {
-      margin-top: 56px;
+      margin-top: $spacing32;
       @include break($break3) {
-        margin-top: 72px;
+        margin-top: $spacing48;
       }
     }
     &__title {
-      color: $colorAccent;
+      color: $colorDarkTxt;
         a {
-          color: inherit;
+          color: $colorAccent;
+          font-weight: $fontBold;
           text-decoration: none;
-          border-bottom: 2px solid transparent;
+          border-bottom: $borderWidth2 solid rgba($colorAccent, .2);
           transition: border-color .3s ease-in-out;
-          &::after {
-            content: '\00a0\2192';
-          }
           &:hover {
             border-color: $colorAccent;
           }
         }
     }
     &__time {
-      margin-top: 8px;
+      margin-top: $spacing16;
       color: $colorLightTxt;
     }
     &__descrip {
-      margin-top: 16px;
+      margin-top: $spacing16;
       @include break($break3) {
-        margin-top: 24px;
-      }
-      ul {
-        list-style-position: inside;
-      }
-      p + ul {
-        margin-top: 16px;
-      }
-      p + p {
-        margin-top: 8px;
+        margin-top: $spacing24;
       }
       a {
         text-decoration: none;
@@ -62,11 +51,8 @@
       }
     }
     &__img-group {
-      margin-top: 32px;
+      margin-top: $spacing24;
       @include fill-width;
-      @include break($break3) {
-        margin-top: 40px;
-      }
     }
     &__img-frame {
       display: inline-block;
@@ -75,7 +61,7 @@
       width: calcPercent(136, 284);
       background-color: #fff;
       overflow:hidden;
-      border-radius: 2px;
+      border-radius: $borderRadius2;
       cursor: pointer;
       @include aspect-ratio(16, 10);
       @extend %border-box;
@@ -84,23 +70,19 @@
       }
       &__video-tag {
         position: absolute;
-        right: 12px;
-        bottom: 12px;
-        height: 20px;
-        line-height: 20px - 2px;
-        padding-left: 6px;
-        padding-right: 6px;
-        font-size: 8px;
+        right: $spacing12;
+        bottom: $spacing12;
+        height: $spacing24;
+        line-height: $spacing24;
+        padding-left: $spacing8;
+        padding-right: $spacing8;
+        font-size: $text12;
         text-transform: uppercase;
         text-align: center;
-        border-radius: 4px;
+        border-radius: $borderRadius4;
         color: #fff;
-        border-width: 1px;
-        border-style: solid;
-        letter-spacing: 0.1em;
-        background-color: rgba(#000, .3);
-        box-shadow: 0 1px 0 rgba(#000,.15);
-        text-shadow: 0 1px 0 rgba(#000,.15);
+        letter-spacing: .1em;
+        background-color: rgba(#000, .4);
       }
       img {
         position: absolute;
@@ -108,33 +90,33 @@
         left: 0;
         width: 100%;
         height: 100%;
-        padding:4px;
+        padding: $spacing4;
       }
     }
   }
   &__tags-intro {
-    margin-top: 32px;
+    margin-top: $spacing32;
     @include break($break3) {
-      margin-top: 48px;
+      margin-top: $spacing48;
     }
   }
   &__tags {
-    margin-top: 32px;
+    margin-top: $spacing32;
     &__title {
-      font-weight: $fontRegular;
+      font-weight: $fontMedium;
     }
     &__group {
-      margin: 12px -4px -4px;
+      margin: #{$spacing12} -#{$spacing4} -#{$spacing4};
       list-style-type: none;
       li {
         display: inline-block;
-        line-height: 32px;
-        padding-left: 12px;
-        padding-right: 12px;
-        margin: 4px;
-        border-radius: 4px;
+        line-height: 2;
+        padding-left: $spacing12;
+        padding-right: $spacing12;
+        margin: $spacing4;
+        border-radius: $borderRadius4;
         background-color: #fff;
-        font-size: 16px;
+        font-size: $text16;
         @extend %border-box;
       }
     }

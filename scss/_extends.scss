@@ -1,6 +1,7 @@
 %link-style {
   color: $colorAccent;
-  border-bottom: 2px solid rgba($colorAccent, .2);
+  font-weight: $fontBold;
+  border-bottom: $borderWidth2 solid rgba($colorAccent, .2);
   transition: border-color .3s ease-in-out;
   text-decoration: none;
   &:hover {
@@ -8,7 +9,6 @@
   }
 }
 %border-box {
-  border-width: 1px;
-  border-style: solid;
-  border-color: $colorBorderLight $colorBorderLight $colorBorderDark;
+  border: $borderWidth1 solid $colorBorder;
+  box-shadow: 0 1px 1px rgba(#000,.05);
 }

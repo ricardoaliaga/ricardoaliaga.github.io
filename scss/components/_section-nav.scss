@@ -1,7 +1,7 @@
 .c-section-nav {
   -webkit-transform: translate3d(0,0,0); // Soluciona bug scroll en iOS
-  border-top: 1px solid $colorBorderLight;
-  box-shadow: 0 1px 2px rgba(#000,.3);
+  border-top: $borderWidth1 solid $colorBorder;
+  border-bottom: $borderWidth1 solid $colorBorder;
   background-color: #fff;
   &__options {
     max-width: $maxWidth1;
@@ -14,22 +14,29 @@
     &__item {
       display: inline-block;
       width: (100% / 3);
-      line-height: 48px;
-      font-size: 10px;
-      letter-spacing: .15em;
+      padding: $spacing4 ($spacing4 / 2);
+      line-height: 40px;
+      font-size: $text14;
       font-weight: $fontBold;
-      text-transform: uppercase;
       text-align: center;
       @include break($break3) {
-        font-size: 13px;
-      }
-      &--curent {
-        box-shadow: inset 0 -3px 0 $colorAccent;
+        font-size: $text16;
       }
       a {
         display: block;
         text-decoration: none;
         color: inherit;
+        border-radius: $borderRadius4;
+        &:hover {
+          background-color: $colorLightBg;
+          color: $colorAccent;
+        }
+      }
+      &--curent { 
+        a {
+          background-color: $colorLightBg;
+          color: $colorAccent;
+        }
       }
     }
   }

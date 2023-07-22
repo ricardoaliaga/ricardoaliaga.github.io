@@ -3,17 +3,14 @@
     color: $colorLightTxt;
   }
   &__title {
-    margin-top: 16px;
-    font-weight: $fontLight;
-    color: $colorAccent;
+    margin-top: $spacing16;
+    color: $colorDarkTxt;
   }
   &__descrip {
-    margin-top: 32px;
-    @include break($break3) {
-      margin-top: 48px;
-    }
+    margin-top: $spacing32;
+    color: $colorLightTxt;
     &__link-group {
-      margin-top: 16px;
+      margin-top: $spacing16;
     }
     &__link {
       @extend %link-style;
